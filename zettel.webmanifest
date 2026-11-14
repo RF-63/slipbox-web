@@ -1,0 +1,16 @@
+{
+  "name": "Zettel — Slipbox",
+  "short_name": "Zettel",
+  "description": "Ein Gedanke, gesprochen oder fotografiert, direkt in den Zettelkasten.",
+  "start_url": "./zettel.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#fdf6d8",
+  "theme_color": "#f2c640",
+  "icons": [
+    { "src": "./icons/zettel-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "./icons/zettel-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "./icons/zettel-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

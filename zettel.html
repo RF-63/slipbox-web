@@ -21,9 +21,9 @@
     <meta name="apple-mobile-web-app-title" content="Zettel" />
     <meta name="theme-color" content="#f6d45b" />
     <title>Zettel</title>
-    <script type="module" crossorigin src="./assets/zettel-BaQ3Vlke.js"></script>
+    <script type="module" crossorigin src="./assets/zettel-BLwoY0XK.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/api-D6gkXMCG.js">
-    <link rel="stylesheet" crossorigin href="./assets/zettel-D5pws3Wy.css">
+    <link rel="stylesheet" crossorigin href="./assets/zettel-BLCtVHkw.css">
   </head>
   <body>
     <main class="zettel">
@@ -35,8 +35,16 @@
         autocomplete="off"
         spellcheck="true"
       ></textarea>
+      <div id="bilder" class="zettel__bilder" hidden></div>
       <p id="stand" class="zettel__stand" role="status" aria-live="polite"></p>
-      <button id="ab" class="zettel__knopf" type="button">In den Kasten</button>
+      <div class="zettel__reihe">
+        <button id="bild" class="zettel__nebenknopf" type="button">Bild</button>
+        <button id="ab" class="zettel__knopf" type="button">In den Kasten</button>
+      </div>
+      <!-- Ohne `capture`: iOS bietet dann Fotomediathek, Kamera und Dateien
+           zur Wahl. Mit `capture` gaebe es nur die Kamera — und ein
+           Bildschirmfoto waere nicht mehr erreichbar. -->
+      <input id="datei" class="zettel__datei" type="file" accept="image/*" multiple />
       <a id="voll" class="zettel__voll" href="./index.html">Zum vollen Kasten</a>
     </main>
   </body>
